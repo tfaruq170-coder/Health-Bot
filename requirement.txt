@@ -1,3 +1,2 @@
 streamlit
 schedule
-plyer
