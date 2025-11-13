@@ -4,7 +4,6 @@ from datetime import datetime
 import time
 import schedule
 import threading
-from plyer import notification
 
 # ====== DATA FUNCTIONS ======
 def load_data():
@@ -24,7 +23,6 @@ data = load_data()
 # ====== PUSH NOTIFICATION FUNCTION ======
 def show_notification(medicine):
     st.toast(f"💊 Reminder: Don't forget to take your medicine — {medicine}!")
-    print(f"Reminder shown for {medicine}")
 
 # ====== SCHEDULER THREAD ======
 def start_scheduler():
