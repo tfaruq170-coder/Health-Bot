@@ -23,11 +23,7 @@ data = load_data()
 
 # ====== PUSH NOTIFICATION FUNCTION ======
 def show_notification(medicine):
-    notification.notify(
-        title="Medication Reminder",
-        message=f"Don't forget to take your medicine: {medicine}",
-        timeout=10
-    )
+    st.toast(f"💊 Reminder: Don't forget to take your medicine — {medicine}!")
     print(f"Reminder shown for {medicine}")
 
 # ====== SCHEDULER THREAD ======
